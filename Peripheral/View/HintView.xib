@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HintView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLj-XY-UWV">
+                    <rect key="frame" x="153.5" y="298.5" width="68.5" height="71"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJx-JY-D3h">
+                            <rect key="frame" x="10" y="59" width="48.5" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="PQz-N3-mOP">
+                            <rect key="frame" x="15" y="12" width="37" height="37"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nJx-JY-D3h" secondAttribute="trailing" constant="10" id="CTU-ab-ILy"/>
+                        <constraint firstItem="PQz-N3-mOP" firstAttribute="centerX" secondItem="OLj-XY-UWV" secondAttribute="centerX" id="Hmr-ah-U9p"/>
+                        <constraint firstItem="PQz-N3-mOP" firstAttribute="top" secondItem="OLj-XY-UWV" secondAttribute="top" constant="12" id="Jvc-6T-jXA"/>
+                        <constraint firstItem="nJx-JY-D3h" firstAttribute="leading" secondItem="OLj-XY-UWV" secondAttribute="leading" constant="10" id="MGV-SA-du8"/>
+                        <constraint firstItem="nJx-JY-D3h" firstAttribute="top" secondItem="PQz-N3-mOP" secondAttribute="bottom" constant="10" id="OA0-m7-jlT"/>
+                        <constraint firstItem="nJx-JY-D3h" firstAttribute="centerX" secondItem="OLj-XY-UWV" secondAttribute="centerX" id="Wzf-Sn-OZa"/>
+                        <constraint firstItem="PQz-N3-mOP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OLj-XY-UWV" secondAttribute="leading" constant="15" id="hST-cs-94R"/>
+                        <constraint firstAttribute="bottom" secondItem="nJx-JY-D3h" secondAttribute="bottom" constant="12" id="nsI-ZN-Rmw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OLj-XY-UWV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7bA-gp-NA1"/>
+                <constraint firstItem="OLj-XY-UWV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PTh-4T-dW9"/>
+            </constraints>
+            <connections>
+                <outlet property="activityView" destination="PQz-N3-mOP" id="Wqi-Rz-n9L"/>
+                <outlet property="titleLabel" destination="nJx-JY-D3h" id="a56-qX-pf5"/>
+            </connections>
+        </view>
+    </objects>
+</document>
